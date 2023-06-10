@@ -23,8 +23,18 @@ public class TestCircle {
 
         //TODO Modify the test program TestCircle to construct an instance of Circle using this constructor.
 
+        c1.setColor("Green");
         Circle c3 = new Circle(5,"Green");
         System.out.println(" The circel has radius of " + c3.getRadius() + " and the color of Circle is" + c3.getColor());
+
+        //TODO public VS private
+        // Try it out and explain the error messages.
+        // c1.radius=5.0;
+        // System.out.println(c1.radius);
+
+        //MAGYARÁZAT: A radius a circle objektumbe private, a TestCircle nem látja.
+
+
     }
 
 }

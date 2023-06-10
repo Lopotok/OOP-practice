@@ -11,9 +11,9 @@ public class Circle {
         radius = r;
         color = "Red";
     }
-    public Circle ( double r, String c){
-            this.radius=r;
-            this.color=c;
+    public Circle ( double radius, String color){
+            this.radius=radius;
+            this.color=color;
     }
     public double getRadius() {
         return radius;
@@ -26,5 +26,11 @@ public class Circle {
     }
     public String getColor(){
         return color;
+    }
+    public void setRadius (double newRadius){
+       radius=newRadius;}
+    public String toString() {
+        return "Circle[radius=" + radius + " color=" + color + "]";
+
     }
 }
